@@ -22,7 +22,7 @@ const projectsData = [
     id:2, title:"CRICKET SCORE", sub:"Cricket Score App - Flutter App • Available on Gumroad", 
     desc:"Real-time Cricket Score Tracking app. Live score: Runs, Wickets, Overs, Target & Need to win. Batsman/Bowler stats, Controls: 1,2,4,6,WICKET,NO BALL,WIDE,UNDO, MATCH AWASANAI auto detection, Edit Details screen, Clean Dark UI. Now available on Gumroad - Click to Get The App!",
     img:"/cricket-score.png", tech:["Flutter","Dart","Gumroad"],
-    link: LINKS.gumroadCricket
+    link: "https://umeda6.gumroad.com/l/cricket-score-app"
   },
   { 
     id:3, title:"MATH SOLVER", sub:"Partial Fraction Calculator", 
