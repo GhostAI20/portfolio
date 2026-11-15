@@ -39,9 +39,9 @@ const certsData = [
   { title:"Creative Design Free Workshop", org:"Creative Design • 2 Days Workshop", img:"/cert6.jpeg" },
   { title:"Introduction to Java", org:"Sololearn", img:"/cert7.jpeg" },
   { title:"CS406: Information Security", org:"Saylor Academy • Mar 15, 2026", img:"/cert8.jpeg" },
-  { title:"Foundations of Cybersecurity", org:"Google • Coursera • Nov 11, 2026", img:"/cert9.jpeg" },
-  { title:"Introduction to Cybersecurity Awareness", org:"HP LIFE", img:"/cert10.jpeg" },
-  { title:"Python for Beginners", org:"University of Moratuwa • Centre for Open & Distance Learning (CODL)", img:"/cert11.jpeg" },
+  { title:"Foundations of Cybersecurity", org:"Google • Coursera • Nov 11, 2026", img:"/cert9.png" },
+  { title:"Introduction to Cybersecurity Awareness", org:"HP LIFE", img:"/cert10.png" },
+  { title:"Python for Beginners", org:"University of Moratuwa • Centre for Open & Distance Learning (CODL)", img:"/cert11.png" },
 ];
 
 const techStack = [
