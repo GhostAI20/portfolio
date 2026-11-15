@@ -39,6 +39,9 @@ const certsData = [
   { title:"Creative Design Free Workshop", org:"Creative Design • 2 Days Workshop", img:"/cert6.jpeg" },
   { title:"Introduction to Java", org:"Sololearn", img:"/cert7.jpeg" },
   { title:"CS406: Information Security", org:"Saylor Academy • Mar 15, 2026", img:"/cert8.jpeg" },
+  { title:"Foundations of Cybersecurity", org:"Google • Coursera • Nov 11, 2026", img:"/cert9.jpeg" },
+  { title:"Introduction to Cybersecurity Awareness", org:"HP LIFE", img:"/cert10.jpeg" },
+  { title:"Python for Beginners", org:"University of Moratuwa • Centre for Open & Distance Learning (CODL)", img:"/cert11.jpeg" },
 ];
 
 const techStack = [
@@ -143,9 +146,9 @@ export default function Home() {
 
       <section id="Home" className="relative z-10 max-w-[1200px] mx-auto px-6 pt-28 grid md:grid-cols-2 gap-10 items-center min-h-[90vh]">
         <div>
-          <div className="inline-flex bg-blue-500/10 border border-blue-500/20 rounded-full px-3 py-1 font-mono text-[10px] text-blue-300">AVAILABLE FOR INTERNSHIP • KOTTE</div>
+          <div className="inline-flex bg-blue-500/10 border border-blue-500/20 rounded-full px-3 py-1 font-mono text-[10px] text-blue-300">AVAILABLE FOR INTERNSHIP</div>
           <h1 className="mt-6 text-[50px] leading-[0.9] font-bold"><span className="text-[#60A5FA]">Welcome to</span><br/>My Portfolio</h1>
-          <p className="mt-5 text-[14px] text-white/60 max-w-[460px]">I'm <span className="text-white font-bold">R.M. Naduni Umeda</span> — A/L 2026 Physical Science at Ananda Sastralaya, Kotte. Cybersecurity Intern @ NetworkWalks.</p>
+          <p className="mt-5 text-[14px] text-white/60 max-w-[460px]">I'm <span className="text-white font-bold">R.M. Naduni Umeda</span> — A/L 2026 Physical Science at Ananda Sastralaya, Mathugama. Cybersecurity Intern @ NetworkWalks.</p>
           <div className="mt-6 flex gap-3">
             <a href={LINKS.linkedin} target="_blank" onClick={playClick} className="bg-[#3B82F6] px-6 py-3 rounded-full font-bold text-[12px]">LINKEDIN →</a>
             <a href={LINKS.github} target="_blank" onClick={playClick} className="bg-white/10 border border-white/10 px-6 py-3 rounded-full font-bold text-[12px]">GITHUB</a>
@@ -169,7 +172,7 @@ export default function Home() {
             <div className="inline-flex bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full px-4 py-1 font-mono text-[10px] text-[#60A5FA] tracking-widest">ABOUT ME</div>
             <h2 className="mt-6 text-[38px] md:text-[48px] font-black leading-[0.9] tracking-tighter">Passionate<br/><span className="text-[#60A5FA]">Cybersecurity</span><br/>Learner</h2>
             <p className="mt-6 text-[14px] leading-[1.7] text-white/60">
-              I'm <span className="text-white font-bold">R.M. Naduni Umeda</span>, an A/L 2026 Physical Science stream student at <span className="text-white">Ananda Sastralaya, Mathugama</span>. Currently working as a <span className="text-[#60A5FA] font-bold">Cybersecurity Intern at NetworkWalks</span> while exploring Networking, Ethical Hacking, and Full-Stack Development.
+              I'm <span className="text-white font-bold">R.M. Naduni Umeda</span>, an A/L 2026 Physical Science student at <span className="text-white">Ananda Sastralaya, Mathugama</span>. Currently working as a <span className="text-[#60A5FA] font-bold">Cybersecurity Intern at NetworkWalks</span> while exploring Networking, Ethical Hacking, and Full-Stack Development.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-3">
               <div className="bg-[#020617] border border-white/10 rounded-[16px] p-4"><div className="font-mono text-[10px] opacity-40">EDUCATION</div><div className="mt-2 font-bold text-[13px]">A/L 2026 - Physical</div><div className="text-[11px] opacity-60">Ananda Sastralaya, Mathugama</div></div>
@@ -186,7 +189,7 @@ export default function Home() {
               <div className="font-mono text-[10px] opacity-40 mb-4">MY JOURNEY</div>
               <div className="space-y-5">
                 <div className="flex gap-4"><div className="w-[2px] bg-[#3B82F6] rounded-full" /><div><div className="font-bold text-[13px]">2026 - Present</div><div className="text-[12px] text-white/60 mt-1">Cybersecurity Intern at NetworkWalks. Building labs, learning enterprise security.</div></div></div>
-                <div className="flex gap-4"><div className="w-[2px] bg-white/10 rounded-full" /><div><div className="font-bold text-[13px]">2024 - 2026</div><div className="text-[12px] text-white/60 mt-1">A/L Physical Science + 8+ certs in Python, Security, Networking, Java.</div></div></div>
+                <div className="flex gap-4"><div className="w-[2px] bg-white/10 rounded-full" /><div><div className="font-bold text-[13px]">2024 - 2026</div><div className="text-[12px] text-white/60 mt-1">A/L Physical Science + 11 certs in Python, Security, Networking, Java.</div></div></div>
                 <div className="flex gap-4"><div className="w-[2px] bg-white/10 rounded-full" /><div><div className="font-bold text-[13px]">Future Goal</div><div className="text-[12px] text-white/60 mt-1">Become a Security Engineer & help secure Sri Lankan infrastructure.</div></div></div>
               </div>
             </div>
@@ -234,12 +237,12 @@ export default function Home() {
         <div className="bg-[#0F172A]/60 border border-white/10 rounded-[32px] p-8 md:p-12 text-center backdrop-blur-xl">
           <div className="inline-flex bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full px-4 py-1 font-mono text-[10px] text-[#60A5FA] tracking-widest">CONTACT</div>
           <h2 className="mt-6 text-[36px] md:text-[52px] font-black tracking-tighter leading-[0.9]">Let's Build<br/><span className="text-[#60A5FA]">Something Secure</span></h2>
-          <p className="mt-4 text-white/60 text-[14px] max-w-[500px] mx-auto">Available for Cybersecurity Internship • Kotte, Sri Lanka. Let's connect on LinkedIn & GitHub!</p>
+          <p className="mt-4 text-white/60 text-[14px] max-w-[500px] mx-auto">Available for Cybersecurity Internship • Mathugama, Sri Lanka. Let's connect on LinkedIn & GitHub!</p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a href={LINKS.linkedin} target="_blank" onClick={playClick} className="flex items-center gap-3 bg-[#0077B5] hover:bg-[#006399] px-8 py-4 rounded-full font-bold text-[13px] hover:scale-105 transition"><span className="w-6 h-6 bg-white text-[#0077B5] rounded-full flex items-center justify-center font-black text-[12px]">in</span> LINKEDIN • CONNECT</a>
             <a href={LINKS.github} target="_blank" onClick={playClick} className="flex items-center gap-3 bg-white text-black hover:bg-white/90 px-8 py-4 rounded-full font-bold text-[13px] hover:scale-105 transition">⬡ GITHUB • GhostAI20</a>
           </div>
-          <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-[10px] opacity-40"><span>© 2026 R.M. Naduni Umeda • Ananda Sastralaya, Kotte</span><span>BUILT WITH NEXT.JS • SECURED BY PASSION</span></div>
+          <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-[10px] opacity-40"><span>© 2026 R.M. Naduni Umeda • Ananda Sastralaya, Mathugama</span><span>BUILT WITH NEXT.JS • SECURED BY PASSION</span></div>
         </div>
       </section>
     </main>
