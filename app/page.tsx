@@ -198,13 +198,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* EXPERIENCE - NEW */}
+      {/* EXPERIENCE */}
       <section id="Experience" className="relative z-10 max-w-[1200px] mx-auto px-6 py-16">
         <div className="text-center mb-10">
           <div className="inline-flex bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full px-4 py-1 font-mono text-[10px] text-[#60A5FA] tracking-widest">EXPERIENCE</div>
           <h2 className="mt-4 text-[42px] font-black tracking-tighter">My <span className="text-[#60A5FA]">Experience</span></h2>
         </div>
-
         <div className="space-y-6">
           <div className="bg-[#0F172A]/60 border border-white/10 rounded-[24px] p-6 md:p-8 flex flex-col md:flex-row gap-6">
             <div className="md:w-1/4">
@@ -215,7 +214,6 @@ export default function Home() {
             <div className="flex-1">
               <h3 className="text-[20px] font-black">Cybersecurity Intern</h3>
               <p className="text-[#60A5FA] font-mono text-[12px] mt-1">NetworkWalks</p>
-              
               <p className="text-white font-bold text-[13px] mt-5">Week 01 - Cybersecurity Lab Setup</p>
               <ul className="text-white/60 text-[13px] space-y-1 list-disc list-inside mt-2">
                 <li>Built isolated penetration testing lab from scratch using VirtualBox and Kali Linux</li>
@@ -226,7 +224,6 @@ export default function Home() {
                 <li>Created a clean recovery snapshot</li>
                 <li>Learned NAT vs NAT Network, VM networking & importance of documentation</li>
               </ul>
-
               <p className="text-white font-bold text-[13px] mt-5">Week 02 - Penetration Testing Report</p>
               <ul className="text-white/60 text-[13px] space-y-1 list-disc list-inside mt-2">
                 <li>Footprinting with 6 Kali tools: whois, whatweb, nslookup, curl, wafw00f, dnsrecon</li>
@@ -235,9 +232,7 @@ export default function Home() {
                 <li>Learned how to gather public info legally & document findings like a professional report</li>
                 <li>Biggest Lesson: Recon is not hacking. It is understanding the target before testing it.</li>
               </ul>
-
               <a href={LINKS.week02Report} target="_blank" onClick={playClick} className="inline-block mt-5 text-[12px] bg-[#3B82F6] px-5 py-2.5 rounded-full font-bold">View Week 02 Report on GitHub →</a>
-
               <div className="flex gap-2 mt-4 flex-wrap">
                 {["Kali Linux","VirtualBox","Nmap","Zenmap","Footprinting"].map(t=>(
                   <span key={t} className="text-[11px] bg-white/10 px-3 py-1 rounded-full text-white/80">{t}</span>
@@ -245,7 +240,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <div className="bg-[#0F172A]/60 border border-white/10 rounded-[24px] p-6 md:p-8 flex flex-col md:flex-row gap-6">
             <div className="md:w-1/4">
               <p className="text-[#60A5FA] font-bold text-[13px]">2024 - 2026</p>
