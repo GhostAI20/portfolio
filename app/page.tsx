@@ -5,6 +5,7 @@ const LINKS = {
   github: "https://github.com/GhostAI20",
   linkedin: "https://www.linkedin.com/in/naduni-umeda",
   cyberLab: "https://github.com/GhostAI20/NETWORKWALKS-NADUNI-UMEDA-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP",
+  week02Report: "https://lnkd.in/gjacRDru",
   mathSolver: "https://github.com/GhostAI20/partial-fraction-calculator",
   email: "mailto:naduni@example.com"
 };
@@ -12,14 +13,14 @@ const LINKS = {
 const projectsData = [
   { 
     id:1, title:"CYBER LAB", sub:"Isolated Cybersecurity Lab", 
-    desc:"Host-only network with Kali + Ubuntu - secure testing environment. NetworkWalks WK1 Project.",
+    desc:"Week 01 - Built isolated lab with VirtualBox + Kali Linux. NAT Network, Static IP 10.0.0.2/24, Gateway 10.0.0.1, Ping + DNS check, Recovery Snapshot. Week 02 - Footprinting with whois, whatweb, nslookup, curl, wafw00f, dnsrecon + Zenmap nmap -T4 -A -v scan. NetworkWalks B084.",
     img:"/cyber-lab.png", tech:["Kali","VirtualBox","Networking"],
     link: LINKS.cyberLab
   },
   { 
-    id:2, title:"CRICKET SCORE", sub:"Cricket Score App", 
-    desc:"Real-time cricket score tracking app with live updates for cricket lovers.",
-    img:"/cricket-score.png", tech:["Flutter","Firebase","API"],
+    id:2, title:"CRICKET SCORE", sub:"Cricket Score App - Flutter App", 
+    desc:"Real-time Cricket Score Tracking app. Live score: Runs, Wickets, Overs, Target & Need to win. Batsman/Bowler stats, Controls: 1,2,4,6,WICKET,NO BALL,WIDE,UNDO, MATCH AWASANAI auto detection, Edit Details screen, Clean Dark UI. Solved Dart bugs, state management, FormatException in pubspec.yaml.",
+    img:"/cricket-score.png", tech:["Flutter","Dart","Android"],
     link: LINKS.github
   },
   { 
@@ -139,7 +140,7 @@ export default function Home() {
       {selectedCert && (<div onClick={()=>{ playClick(); setSelectedCert(null)}} className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-md flex items-center justify-center p-6"><img src={selectedCert} className="max-w-[90%] max-h-[90%] rounded-[16px]" /></div>)}
 
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-[#0F172A]/80 backdrop-blur-2xl border border-white/10 rounded-full px-2 py-2 flex gap-1">
-        {["Home","About","Portfolio","Contact"].map(m=>(
+        {["Home","About","Experience","Portfolio","Contact"].map(m=>(
           <button key={m} onClick={()=>{ playClick(); setActive(m); document.getElementById(m)?.scrollIntoView({behavior:'smooth'}) }} className={`px-5 py-2 rounded-full font-mono text-[11px] ${active===m ? "bg-white text-black font-bold" : "opacity-60"}`}>{m}</button>
         ))}
       </nav>
@@ -192,6 +193,71 @@ export default function Home() {
                 <div className="flex gap-4"><div className="w-[2px] bg-white/10 rounded-full" /><div><div className="font-bold text-[13px]">2024 - 2026</div><div className="text-[12px] text-white/60 mt-1">A/L Physical Science + 11 certs in Python, Security, Networking, Java.</div></div></div>
                 <div className="flex gap-4"><div className="w-[2px] bg-white/10 rounded-full" /><div><div className="font-bold text-[13px]">Future Goal</div><div className="text-[12px] text-white/60 mt-1">Become a Security Engineer & help secure Sri Lankan infrastructure.</div></div></div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EXPERIENCE - NEW */}
+      <section id="Experience" className="relative z-10 max-w-[1200px] mx-auto px-6 py-16">
+        <div className="text-center mb-10">
+          <div className="inline-flex bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full px-4 py-1 font-mono text-[10px] text-[#60A5FA] tracking-widest">EXPERIENCE</div>
+          <h2 className="mt-4 text-[42px] font-black tracking-tighter">My <span className="text-[#60A5FA]">Experience</span></h2>
+        </div>
+
+        <div className="space-y-6">
+          <div className="bg-[#0F172A]/60 border border-white/10 rounded-[24px] p-6 md:p-8 flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/4">
+              <p className="text-[#60A5FA] font-bold text-[13px]">2026 - Present</p>
+              <p className="text-white/60 text-[12px] mt-1">Remote - Batch B084</p>
+              <p className="text-white/60 text-[12px] mt-2">Mentor: Sir Waqas Karim (CCIE)</p>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-[20px] font-black">Cybersecurity Intern</h3>
+              <p className="text-[#60A5FA] font-mono text-[12px] mt-1">NetworkWalks</p>
+              
+              <p className="text-white font-bold text-[13px] mt-5">Week 01 - Cybersecurity Lab Setup</p>
+              <ul className="text-white/60 text-[13px] space-y-1 list-disc list-inside mt-2">
+                <li>Built isolated penetration testing lab from scratch using VirtualBox and Kali Linux</li>
+                <li>Configured VirtualBox with NAT Network</li>
+                <li>Imported and set up Kali Linux VM</li>
+                <li>Assigned static IP 10.0.0.2/24 with gateway 10.0.0.1</li>
+                <li>Verified connectivity with ping and DNS (nslookup / 8.8.8.8)</li>
+                <li>Created a clean recovery snapshot</li>
+                <li>Learned NAT vs NAT Network, VM networking & importance of documentation</li>
+              </ul>
+
+              <p className="text-white font-bold text-[13px] mt-5">Week 02 - Penetration Testing Report</p>
+              <ul className="text-white/60 text-[13px] space-y-1 list-disc list-inside mt-2">
+                <li>Footprinting with 6 Kali tools: whois, whatweb, nslookup, curl, wafw00f, dnsrecon</li>
+                <li>Network Scanning with Zenmap Intense Scan - Topology, OS Detection & Ports</li>
+                <li>Command: nmap -T4 -A -v</li>
+                <li>Learned how to gather public info legally & document findings like a professional report</li>
+                <li>Biggest Lesson: Recon is not hacking. It is understanding the target before testing it.</li>
+              </ul>
+
+              <a href={LINKS.week02Report} target="_blank" onClick={playClick} className="inline-block mt-5 text-[12px] bg-[#3B82F6] px-5 py-2.5 rounded-full font-bold">View Week 02 Report on GitHub →</a>
+
+              <div className="flex gap-2 mt-4 flex-wrap">
+                {["Kali Linux","VirtualBox","Nmap","Zenmap","Footprinting"].map(t=>(
+                  <span key={t} className="text-[11px] bg-white/10 px-3 py-1 rounded-full text-white/80">{t}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-[#0F172A]/60 border border-white/10 rounded-[24px] p-6 md:p-8 flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/4">
+              <p className="text-[#60A5FA] font-bold text-[13px]">2024 - 2026</p>
+              <p className="text-white/60 text-[12px] mt-1">Mathugama</p>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-[20px] font-black">G.C.E. A/L - Physical Science</h3>
+              <p className="text-[#60A5FA] font-mono text-[12px] mt-1">Ananda Sastralaya, Mathugama</p>
+              <ul className="text-white/60 text-[13px] space-y-1 list-disc list-inside mt-3">
+                <li>Python & Flask Developer</li>
+                <li>Built Cricket Score App, Math Solver & Cyber Lab projects</li>
+              </ul>
             </div>
           </div>
         </div>
