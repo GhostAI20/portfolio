@@ -7,6 +7,7 @@ const LINKS = {
   cyberLab: "https://github.com/GhostAI20/NETWORKWALKS-NADUNI-UMEDA-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP",
   week02Report: "https://lnkd.in/gjacRDru",
   mathSolver: "https://github.com/GhostAI20/partial-fraction-calculator",
+  gumroadCricket: "https://umeda6.gumroad.com/l/cricket-score-app",
   email: "mailto:naduni@example.com"
 };
 
@@ -18,10 +19,10 @@ const projectsData = [
     link: LINKS.cyberLab
   },
   { 
-    id:2, title:"CRICKET SCORE", sub:"Cricket Score App - Flutter App", 
-    desc:"Real-time Cricket Score Tracking app. Live score: Runs, Wickets, Overs, Target & Need to win. Batsman/Bowler stats, Controls: 1,2,4,6,WICKET,NO BALL,WIDE,UNDO, MATCH AWASANAI auto detection, Edit Details screen, Clean Dark UI. Solved Dart bugs, state management, FormatException in pubspec.yaml.",
-    img:"/cricket-score.png", tech:["Flutter","Dart","Android"],
-    link: LINKS.github
+    id:2, title:"CRICKET SCORE", sub:"Cricket Score App - Flutter App • Available on Gumroad", 
+    desc:"Real-time Cricket Score Tracking app. Live score: Runs, Wickets, Overs, Target & Need to win. Batsman/Bowler stats, Controls: 1,2,4,6,WICKET,NO BALL,WIDE,UNDO, MATCH AWASANAI auto detection, Edit Details screen, Clean Dark UI. Now available on Gumroad - Click to Get The App!",
+    img:"/cricket-score.png", tech:["Flutter","Dart","Gumroad"],
+    link: LINKS.gumroadCricket
   },
   { 
     id:3, title:"MATH SOLVER", sub:"Partial Fraction Calculator", 
@@ -267,7 +268,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-6">
               {projectsData.map((p)=>(
                 <a key={p.id} href={p.link} target="_blank" onClick={playClick} className="group bg-[#0F172A]/70 border border-white/10 rounded-[24px] overflow-hidden hover:border-[#3B82F6]/50 hover:-translate-y-1 transition-all">
-                  <div className="h-[200px] bg-black overflow-hidden relative"><img src={p.img} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" /><div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span className="bg-white text-black px-4 py-2 rounded-full font-bold text-[11px]">VIEW ON GITHUB →</span></div></div>
+                  <div className="h-[200px] bg-black overflow-hidden relative"><img src={p.img} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" /><div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span className="bg-white text-black px-4 py-2 rounded-full font-bold text-[11px]">{p.id===2 ? "GET ON GUMROAD →" : "VIEW ON GITHUB →"}</span></div></div>
                   <div className="p-5"><h3 className="font-black text-[16px]">{p.title}</h3><p className="mt-1 font-mono text-[10px] text-[#60A5FA]">{p.sub}</p><p className="mt-3 text-[12px] text-white/60">{p.desc}</p></div>
                 </a>
               ))}
